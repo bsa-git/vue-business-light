@@ -1,7 +1,7 @@
 # Vue-Business-Light
 
 I used a free template [Osahan – Free Responsive Business Bootstrap Template](https://graygrids.com/item/osahan-free-responsive-business-bootstrap-template/)
-to demonstrate some of the features remarkable library [Vue.js](http://vuejs.org/) . 
+to demonstrate some of the features remarkable library [Vue.js](http://vuejs.org/). 
 
 Main features of the package:
 
