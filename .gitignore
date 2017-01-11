@@ -49,7 +49,7 @@ Temporary Items
 # =========================
 # My Ignore
 # =========================
-
+/public
 /public/*
 /nbproject/*
 /.vscode/*

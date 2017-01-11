@@ -58,7 +58,7 @@ require([
     'app/components/portfolio/portfolio-col4/portfolio-col4',
     'app/components/portfolio/portfolio-item/portfolio-item',
 ],
-    function (Vue, VueRouter, App, Home, About, Services, Contact, Error404, Faq, Pricing, Sidebar, SidebarHome, FullWidth, Blog, BlogPost, BlogHome1, BlogHome2, Portfolio, PortfolioCol1, PortfolioCol2, PortfolioCol3, PortfolioCol4, PortfolioItem) {
+    function (Vue, VueRouter, App, Home, About, Services, Contact, Error404, Faq, Pricing, Sidebar, SidebarHome, FullWidth, Blog, BlogPost, BlogHome1, BlogHome2, Portfolio, PortfolioCol1, PortfolioCol2, PortfolioCol3, PortfolioCol4, PortfolioItem) {// 
 
         // Use plugin - VueRouter
         Vue.use(VueRouter);
@@ -75,7 +75,6 @@ require([
                 meta: { home: true, title: 'Home', summary: '' },
                 component: Home
             },
-
             {
                 path: '/about',
                 meta: { about: true, title: 'About', summary: 'Lorem ipsum dolor sit ame' },
@@ -279,6 +278,7 @@ require([
                 ],
                 component: Portfolio
             },
+            
         ];
 
         // Create the router instance and pass the `routes` option
