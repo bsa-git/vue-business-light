@@ -1,0 +1,20 @@
+<div class="section sub-header">
+    <div data-wow-duration="4s" style="visibility: visible; animation-duration: 4s; animation-name: bounceInRight;" class="container bounceInRight animated">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">{{ $route.meta.title }}
+                    <small>{{ $route.meta.summary }}</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="/#/home"><i class="fa fa-home"></i> Home</a>
+                    </li>
+                    <template v-if="isSubMenu($route.meta.submenu)">
+                        <li><a :href="$route.meta.submenu.path"> {{ $route.meta.submenu.title }}</a></li>
+                    </template>
+                    <li class="active">{{ $route.meta.title }}</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

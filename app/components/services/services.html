@@ -1,0 +1,19 @@
+<div>
+    <!-- Heading/Breadcrumbs -->
+    <app-breadcrumbs v-show="$route.meta.services"></app-breadcrumbs>
+    <!-- Page Content -->
+    <app-services-panels></app-services-panels>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <app-services-tabs></app-services-tabs>
+            </div>
+            <div class="col-lg-4">
+                <app-services-accordion></app-services-accordion>
+            </div>
+        </div>
+    </div>
+    <app-services-list></app-services-list>
+    <app-customers></app-customers>
+    <!-- End Page Content -->
+</div>

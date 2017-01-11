@@ -1,0 +1,20 @@
+<div class="section section-customers">
+    <div class="container">
+        <!-- Related Projects Row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Related Projects</h2>
+            </div>
+            <div class="col-xs-12">
+                <div id="customers" class="owl-carousel owl-carousel-featured">
+                    <div class="item" v-for="project in portfolio.items">
+                        <a :href="project.url">
+                            <img alt="" :src="project.img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+</div>

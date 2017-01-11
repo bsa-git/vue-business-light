@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row pricing-page">
+        <div class="col-md-4" v-for="plan in pricing.items">
+            <div :class="['panel', 'text-center', plan.panel_class]">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{ plan.title }}</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="plan-price">
+                        <div class="price-value">{{ plan.price_value }}<span>.00</span></div>
+                        <div class="interval">per month</div>
+                    </div>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>{{ plan.user }}</strong> User</li>
+                    <li class="list-group-item"><strong>{{ plan.projects }}</strong> Projects</li>
+                    <li class="list-group-item"><strong>{{ plan.email_accounts }}</strong> Email Accounts</li>
+                    <li class="list-group-item"><strong>{{ plan.disk_space }}</strong> Disk Space</li>
+                    <li class="list-group-item"><strong>{{ plan.monthly_bandwidth }}</strong> Monthly Bandwidth</li>
+                    <li class="list-group-item"><a href="#" :class="['btn', plan.btn_class]">Sign Up!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

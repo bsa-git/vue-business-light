@@ -1,0 +1,70 @@
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+        <li data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: flipInY;" class="flipInY animated">
+            <a :class="{ 'active': $route.meta.home }" href="/#/home"><i class="fa fa-home"></i> Home</a>
+        </li>
+        <li data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: flipInY;" class="flipInY animated">
+            <a :class="{ 'active': $route.meta.about }" href="/#/about">About</a>
+        </li>
+        <li data-wow-duration="3s" style="visibility: visible; animation-duration: 3s; animation-name: flipInY;" class="flipInY animated">
+            <a :class="{ 'active': $route.meta.services }" href="/#/services">Services</a>
+        </li>
+        <li data-wow-duration="4s" style="visibility: visible; animation-duration: 4s; animation-name: flipInY;" class="dropdown flipInY animated">
+            <a href="#" :class="[ 'dropdown-toggle', { 'active': $route.meta.portfolio } ]" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+            <ul data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: flipInY;" class="dropdown-menu flipInY animated">
+                <li>
+                    <a href="/#/portfolio/col-1">1 Column Portfolio</a>
+                </li>
+                <li>
+                    <a href="/#/portfolio/col-2">2 Column Portfolio</a>
+                </li>
+                <li>
+                    <a href="/#/portfolio/col-3">3 Column Portfolio</a>
+                </li>
+                <li>
+                    <a href="/#/portfolio/col-4">4 Column Portfolio</a>
+                </li>
+                <li>
+                    <a href="/#/portfolio/item">Single Portfolio Item</a>
+                </li>
+            </ul>
+        </li>
+        <li data-wow-duration="5s" style="visibility: visible; animation-duration: 5s; animation-name: flipInY;" class="dropdown flipInY animated">
+            <a href="#" :class="[ 'dropdown-toggle', { 'active': $route.meta.blog } ]" data-toggle="dropdown">Blog <b class="caret"></b></a>
+            <ul data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: flipInY;" class="dropdown-menu flipInY animated">
+                <li>
+                    <a href="/#/blog/home1">Blog Home 1</a>
+                </li>
+                <li>
+                    <a href="/#/blog/home2">Blog Home 2</a>
+                </li>
+                <li>
+                    <a href="/#/blog/post">Blog Post</a>
+                </li>
+            </ul>
+        </li>
+        <li data-wow-duration="6s" style="visibility: visible; animation-duration: 6s; animation-name: flipInY;" class="dropdown flipInY animated">
+            <a href="#" :class="[ 'dropdown-toggle', { 'active': $route.meta.other_pages } ]" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+            <ul data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: flipInY;" class="dropdown-menu flipInY animated">
+                <li>
+                    <a href="/#/full-width">Full Width Page</a>
+                </li>
+                <li>
+                    <a href="/#/sidebar">Sidebar Page</a>
+                </li>
+                <li>
+                    <a href="/#/faq">FAQ</a>
+                </li>
+                <li>
+                    <a href="/#/error-404">404</a>
+                </li>
+                <li>
+                    <a href="/#/pricing">Pricing Table</a>
+                </li>
+            </ul>
+        </li>
+        <li data-wow-duration="7s" style="visibility: visible; animation-duration: 7s; animation-name: flipInY;" class="flipInY animated">
+            <a href="/#/contact">Contact</a>
+        </li>
+    </ul>
+</div>

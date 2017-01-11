@@ -1,0 +1,13 @@
+<div class="counters">
+    <div class="row">
+        <div class="col-sm-4" v-for="counter in team.summary">
+            <div class="counter-block">
+                <i :class="[ 'fa', counter.icon ]"></i>
+                <h2>{{ counter.sum }}</h2>
+                <p>{{ counter.title }}</p>
+            </div>
+            <!-- /.counter-block -->
+        </div>
+    </div>
+    <!-- /.row -->
+</div>

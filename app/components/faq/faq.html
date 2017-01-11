@@ -1,0 +1,16 @@
+<div>
+    <!-- Heading/Breadcrumbs -->
+    <app-breadcrumbs v-show="$route.meta.faq"></app-breadcrumbs>
+    <!-- Page Content -->
+    <div class="container faqs">
+        <div class="row">
+            <div class="col-md-4">
+                <app-sidebar-widgets></app-sidebar-widgets>
+            </div>
+            <div class="col-lg-8">
+                <app-faq-accordion></app-faq-accordion>
+            </div>
+        </div>
+    </div>
+    <!-- End Page Content -->
+</div>

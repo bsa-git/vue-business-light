@@ -1,0 +1,48 @@
+<div class="col-md-4">
+    <div class="Contact-Info">
+        <h2 class="page-header">Contact Details</h2>
+        <div class="tex-contact">
+            <div v-html="about.subscribe.about_us"></div>
+        </div>
+        <div class="block-contact">
+            <p>Address :</p>
+            <ul>
+                <li>
+                    <i class="fa fa-map-marker"></i>
+                    <span>{{ contacts.address }}</span>
+                </li>
+            </ul>
+        </div>
+        <div class="block-contact">
+            <p>Phone :</p>
+            <ul>
+                <li>
+                    <i class="fa fa-phone"></i>
+                    <span>{{ contacts.phone }}</span>
+                </li>
+                <li>
+                    <i class="fa fa-fax"></i>
+                    <span>{{ contacts.fax }}</span>
+                </li>
+            </ul>
+        </div>
+        <div class="block-contact">
+            <p>Email :</p>
+            <ul>
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <span>{{ contacts.email }}</span>
+                </li>
+            </ul>
+        </div>
+        <div class="block-contact">
+            <p>Website :</p>
+            <ul>
+                <li>
+                    <i class="fa fa-globe"></i>
+                    <span>{{ contacts.website }}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

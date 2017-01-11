@@ -1,0 +1,24 @@
+<div class="container">
+    <!-- Project One -->
+    <div v-for="item in portfolio.items">
+        <div class="row">
+            <div class="col-md-7">
+                <a :href="item.url">
+                    <img class="img-responsive img-hover" :src="item.img" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>{{ item.title }}</h3>
+                <h4>{{ item.subheading }}</h4>
+                <p v-html="item.content"></p>
+                <!-- Share Social -->
+                <app-share-social></app-share-social>
+                <a class="btn btn-primary" :href="item.url">View Project</a>
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+    </div>
+    <!-- Pager -->
+    <app-portfolio-pager></app-portfolio-pager>
+</div>

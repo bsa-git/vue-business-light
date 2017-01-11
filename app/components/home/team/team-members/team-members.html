@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="members">
+        <div class="col-sm-3" v-for="member in team.members">
+            <div class="member-block">
+                <p>{{ member.about}}</p>
+                <img :alt="member.img_alt" :src="member.img_src">
+                <div class="details">
+                    <h6>{{ member.name }}</h6>
+                    <span class="small-text">{{ member.position }}</span>
+                    <div class="social-widget">
+                        <ul class="social-icons">
+                            <li v-for="icon in member.social_icons">
+                                <a :class="icon.class" :href="icon.url"><i :class="[ 'fa', icon.icon]"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.details -->
+            </div>
+            <!-- /.member-block -->
+        </div>
+        <!-- /.col-sm-3 -->
+    </div>
+</div>

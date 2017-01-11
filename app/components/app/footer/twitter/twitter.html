@@ -1,0 +1,11 @@
+<div>
+    <div class="footer-widget twitter-widget">
+        <h4>Twitter <i class="fa fa-twitter-square"></i> Feed<span class="head-line"></span></h4>
+        <ul>
+            <li v-for="msg in socials.twitter.msgs">
+                <p><a :href="socials.twitter.url">{{ socials.twitter.tag }} </a> {{ msg.title }}</p>
+                <span><i class="fa fa-clock-o"></i> {{ msg.date }}</span>
+            </li>
+        </ul>
+    </div>
+</div>

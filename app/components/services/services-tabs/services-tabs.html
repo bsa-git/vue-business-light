@@ -1,0 +1,15 @@
+<div>
+    <h2 class="page-header">Service Tabs</h2>
+    <ul id="myTab" class="nav nav-tabs nav-justified">
+        <li :class="{ 'active': !index }" v-for="(service, index) in services.tabs.items">
+            <a :href="'#' + service.id" data-toggle="tab"><i :class="[ 'fa', service.icon ]"></i> {{ service.title }}</a>
+        </li>
+    </ul>
+
+    <div id="myTabContent" class="tab-content">
+        <div :class="[ 'tab-pane', 'fade', { 'active': !index, 'in': !index } ]" :id="service.id" v-for="(service, index) in services.tabs.items">
+            <h4>{{ service.title }}</h4>
+            <div v-html="service.text"></div>
+        </div>
+    </div>
+</div>

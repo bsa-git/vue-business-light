@@ -1,0 +1,13 @@
+<div>
+    <!-- Heading/Breadcrumbs -->
+    <app-breadcrumbs v-show="$route.meta.contact"></app-breadcrumbs>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <app-contact-form></app-contact-form>
+            <app-contact-info></app-contact-info>
+        </div>
+    </div>
+    <app-google-map></app-google-map>
+    <!-- End Page Content -->
+</div>

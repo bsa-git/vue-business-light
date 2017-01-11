@@ -1,0 +1,34 @@
+<div>
+    <!-- Blog Posts -->
+    <div v-for="post in blog.posts">
+        <div class="row">
+            <div class="col-md-1 text-center">
+                <p><i :class="['fa', 'fa-4x', post.icon ]"></i>
+                </p>
+                <p>{{ post.date }}</p>
+            </div>
+            <div class="col-md-5">
+                <a :href="post.url">
+                    <img class="img-responsive img-hover" :src="post.img" alt="">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h3>
+                    <a :href="post.url">{{ post.title }}</a>
+                </h3>
+                <ul class="post-meta">
+                    <li><i class="fa fa-user"></i> By <a :href="post.meta.user.url">{{ post.meta.user.name }}</a></li>
+                    <li><i class="fa fa-clock-o"></i> Posted on {{ post.meta.date }}</li>
+                    <li><i class="fa fa-tag"></i> <a :href="tag.url" v-for="(tag, index) in post.meta.tags"><span v-if="index">, </span>{{ tag.item }}</a></li>
+                    <li><i class="fa fa-comment-o"></i> <a :href="post.meta.comments.url">{{ post.meta.comments.count }} Comments</a></li>
+                </ul>
+                <p v-html="post.content"></p>
+                <a class="btn btn-primary" :href="post.url">Read More <i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+        
+    </div>
+</div>
