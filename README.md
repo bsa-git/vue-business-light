@@ -59,7 +59,7 @@ to other libraries/frameworks, check out the [Comparison with Other Frameworks](
 
 To optimize, run:
 
-    node app/js/r.js -o build.js
+    node app/js/r.js -o build_require.js
 
 That build command creates an optimized version of the project in a
 **public** directory. The main.js file will be optimized to include

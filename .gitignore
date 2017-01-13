@@ -49,6 +49,8 @@ Temporary Items
 # =========================
 # My Ignore
 # =========================
+/node_modules
+/node_modules/*
 /public
 /public/*
 /nbproject/*

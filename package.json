@@ -4,10 +4,8 @@
   "description": "Example of creating a website based Vue.js library",
   "author": "Sergei Beskorovainyi",
   "license": "MIT",
-  "dependencies": {
-  },
-  "scripts": {
-  },
+  "dependencies": {},
+  "scripts": {},
   "devDependencies": {
   }
 }
