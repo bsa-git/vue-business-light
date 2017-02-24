@@ -4,6 +4,7 @@ requirejs.config({
         css: 'app/js/requirejs/css.min', //requirejs plugin for load css
         text: 'app/js/requirejs/text', //requirejs plugin for load text
         lodash: 'app/js/lodash/lodash.min', // Standard library
+        es6_promise: 'app/js/es6-promise/es6-promise.min',
         vue:  'app/js/vue/vue', // 'https://unpkg.com/vue/dist/vue',
         vuex:  'app/js/vue/vuex', // 'https://unpkg.com/vuex/dist/vuex',
         vue_router: 'app/js/vue/vue-router', // 'https://unpkg.com/vue-router/dist/vue-router',
@@ -11,7 +12,7 @@ requirejs.config({
     },
     shim: {
         app_comp: {
-            deps: ['lodash']
+            deps: ['lodash', 'es6_promise']
         },
     }
 });
