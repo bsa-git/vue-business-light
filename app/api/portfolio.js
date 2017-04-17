@@ -160,11 +160,11 @@ define(['app/config/env/index'], function (config) {
     var getPortfolioItems = function (cb, params) {// params = { id: 1, nCol: 1 }, 
         if (env === 'testing') {
             // Change Portfolio items
-            portfolio = _changePortfolioItems(params);
+            var portfolio = _changePortfolioItems(params);
             cb(portfolio);
         } else {
             // Change Portfolio items
-            portfolio = _changePortfolioItems(params);
+            var portfolio = _changePortfolioItems(params);
             cb(portfolio);
         }
     };
@@ -175,7 +175,7 @@ define(['app/config/env/index'], function (config) {
             cb(portfolio);
         } else {
             var portfolio = _.pick(_portfolio, ['url', 'item']);
-            cb(portfolio);
+            cb(portfolio); 
         }
     };
 
