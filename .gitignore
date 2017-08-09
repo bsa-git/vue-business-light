@@ -49,12 +49,11 @@ Temporary Items
 # =========================
 # My Ignore
 # =========================
-/node_modules
-/node_modules/*
-/public
-/public/*
-/nbproject/*
-/.vscode/*
+.idea
+node_modules
+public
+nbproject
+.vscode
 database.rules.json
 firebase.json
 .firebaserc
