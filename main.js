@@ -24,7 +24,6 @@ require([
     'vue_router',
 
     //--- Components ---
-
     // App
     'app_comp',
     // Home
